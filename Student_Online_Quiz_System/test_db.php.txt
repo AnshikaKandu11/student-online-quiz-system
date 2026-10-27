@@ -1,0 +1,17 @@
+<?php
+
+$host = "127.0.0.1";
+$port = 3307;
+$username = "root";
+$password = "root";
+$database = "online_quiz";
+
+$conn = new mysqli($host, $username, $password, $database, $port);
+
+if ($conn->connect_error) {
+    die("FAILED: " . $conn->connect_error);
+}
+
+echo "SUCCESS: MySQL connection is working.";
+
+?>
